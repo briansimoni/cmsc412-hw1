@@ -86,7 +86,21 @@ func undirectedEdge(e edge) edge {
 }
 
 
+// convert the float value to string and truncate 0s
 func floatToString(input_num float64) string {
 	// to convert a float number to a string
-	return strconv.FormatFloat(input_num, 'f', 6, 64)
+	n := strconv.FormatFloat(input_num, 'f', 6, 64)
+	s := ""
+	r := true
+	for i := len(n) - 1; i >= 0; i-- {
+		if(string(n[i]) == "0" && r) {
+			continue
+		} else if string(n[i]) == "." {
+			r = false
+			continue
+		} else {
+			s = string(n[i]) + s
+		}
+	}
+	return s
 }
