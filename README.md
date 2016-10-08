@@ -9,14 +9,14 @@ Once you have Go installed, you can:
 and then
 `./cmsc412-hw1`
 
-You may need to `sudo chmod 500 cmsc412-hw1` to get execute permissions
-
 It will try to read in graph.txt from the present working directory and output wdegree.txt in the same directory.
 
 Here is the link to download Go
 [https://golang.org/doc/install](https://golang.org/doc/install)
 
 If you don't feel like downloading, installing, and configuring Go, I've compiled it for the major operating systems and I have them availble for download on my website.
+
+You may need to `sudo chmod 500 cmsc412-hw1` to get execute permissions
 
 [MacOS/Linux](http://briansimoni.com/wp-content/uploads/2016/09/cmsc412-hw1)
 
