@@ -16,7 +16,7 @@ func (g graph) IsInGraph(n int) bool {
 }
 
 func (g graph) InsertNode(n node) {
-	if ( !g.IsInGraph(n.id) ) {
+	if !g.IsInGraph(n.id) {
 		g.nodes = append(g.nodes, n)
 	}
 }

@@ -3,10 +3,9 @@ package main
 import "reflect"
 
 type node struct {
-	id int
+	id    int
 	edges []edge
 }
-
 
 func (n node) WeightedDegreeCentrality() float64 {
 
