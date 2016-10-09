@@ -36,7 +36,7 @@ func main() {
 
 	fileString := ""
 	for i := range g.nodes {
-		fileString += floatToString(g.nodes[i].WeightedDegreeCentrality()) + "\n"
+		fileString += floatToString(g.nodes[i].WeightedDegreeCentrality()) + "\r\n"
 	}
 
 	f, err := os.Create("wdegree.txt")
